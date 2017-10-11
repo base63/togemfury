@@ -23,3 +23,5 @@ deploy:
 - provider: script
   skip_cleanup: true
   script: ./src/togemfury.sh --user ${GEMFURY_USER} --api_key ${GEMFURY_API_KEY}
+  on:
+    tags: true
