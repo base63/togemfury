@@ -1,0 +1,31 @@
+{
+  "name": "@base63/togemfury",
+  "version": "0.0.0",
+  "description": "Pushes the current package to gemfury.",
+  "author": "Base63 team",
+  "scripts": {},
+  "bin": {
+    "togemfury": "togemfury.sh"
+  },
+  "keywords": [
+    "gemfury",
+    "npm",
+    "push"
+  ],
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/base63/togemfury.git"
+  },
+  "private": true,
+  "homepage": "https://github.com/base63/togemfury#readme",
+  "filesPack": {
+    "src/togemfury.sh": "f:togemfury.sh",
+    "README.md": "f:README.md",
+    "package.json": "f:package.json"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "json": "^9.0.4"
+  },
+  "devDependencies": {}
+}
