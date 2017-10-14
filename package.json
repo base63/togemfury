@@ -1,6 +1,6 @@
 {
   "name": "@base63/togemfury",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Pushes the current package to gemfury.",
   "author": "Base63 team",
   "scripts": {},
