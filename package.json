@@ -16,7 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/base63/togemfury.git"
   },
-  "private": true,
   "homepage": "https://github.com/base63/togemfury#readme",
   "filesPack": {
     "src/togemfury.sh": "f:togemfury.sh",
