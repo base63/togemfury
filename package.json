@@ -12,7 +12,7 @@
     "npm",
     "push"
   ],
-  "respository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/base63/togemfury.git"
   },
