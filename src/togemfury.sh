@@ -107,10 +107,10 @@ fi
 
 cd ${WORK_DIR}
 
-../node_modules/.bin/json -q -I -f package.json -e "this.files = []"
+$(npm bin)/json -q -I -f package.json -e "this.files = []"
 for f in `ls`
 do
-    ../node_modules/.bin/json -q -I -f package.json -e "this.files.push(\"${f}\")"
+    $(npm bin)/json -q -I -f package.json -e "this.files.push(\"${f}\")"
 done
 
 npm pack
