@@ -105,13 +105,14 @@ then
     cp package.json ${WORK_DIR}
 fi
 
-cd ${WORK_DIR}
-
-$(npm bin)/json -q -I -f package.json -e "this.files = []"
-for f in `ls`
+$(npm bin)/json -q -I -f ${WORK_DIR}/package.json -e "this.files = []"
+for f in `ls ${WORK_DIR}`
 do
-    $(npm bin)/json -q -I -f package.json -e "this.files.push(\"${f}\")"
+    echo $f
+    $(npm bin)/json -q -I -f ${WORK_DIR}/package.json -e "this.files.push(\"${f}\")"
 done
+
+cd ${WORK_DIR}
 
 npm pack
 
