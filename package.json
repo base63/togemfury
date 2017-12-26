@@ -1,12 +1,11 @@
 {
   "name": "@base63/togemfury",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pushes the current package to gemfury.",
   "author": "Base63 team",
   "scripts": {},
   "bin": {
-    "togemfury": "togemfury.sh",
-    "json": "./node_modules/.bin/json"
+    "togemfury": "togemfury.sh"
   },
   "keywords": [
     "gemfury",
