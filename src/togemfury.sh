@@ -95,20 +95,17 @@ done
 
 if [[ ${SAW_README} = 0 ]]
 then
-    echo 'Here'
     cp README.md ${WORK_DIR}
 fi
 
 if [[ ${SAW_PACKAGE} = 0 ]]
 then
-    echo 'THere'
     cp package.json ${WORK_DIR}
 fi
 
 $(npm bin)/json -q -I -f ${WORK_DIR}/package.json -e "this.files = []"
 for f in `ls ${WORK_DIR}`
 do
-    echo $f
     $(npm bin)/json -q -I -f ${WORK_DIR}/package.json -e "this.files.push(\"${f}\")"
 done
 
