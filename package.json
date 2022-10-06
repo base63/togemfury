@@ -24,7 +24,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "json": "=9.0.4"
+    "json": "11.0.0"
   },
   "devDependencies": {}
 }
